@@ -1,0 +1,61 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Receita de {{recipe.title}} de {{recipe.author}} </title>
+    <link rel="stylesheet" href="/css/recipe.css"></head>
+{% endblock %}
+
+
+{% block content %}    
+    
+    <div class="recipe__img-container">
+        <img src="{{recipe.image}}" alt="Imagem da {{recipe.title}}">
+    </div>
+
+    <div class="recipe-title">
+        <h1>{{recipe.title}}</h1>
+        <span>por {{recipe.author}}</span>
+    </div>
+
+
+    <div class="recipe__info">
+        <div class="title">
+            <p>Ingredientes</p>
+            <span class="hide-i">ESCONDER</span>
+        </div>
+        <div class="ingredient-list">
+            <ul>
+                {% for ingredient in recipe.ingredients %}
+                    <li>{{ingredient}};</li>
+                {% endfor %}
+            </ul>
+        </div>       
+    </div>
+
+    <div class="recipe__info">
+        <div class="title">
+            <p>Modo de Preparo</p>
+            <span class="hide-p">ESCONDER</span>
+        </div>
+        <div class="preparation-list">
+            <ul>
+                {% for line in recipe.preparation %}
+                    <li>{{line}}</li>
+                {% endfor %}
+            </ul>
+        </div>      
+    </div>
+
+    {% if recipe.information != '' %}
+        <div class="recipe__info">
+            <div class="title">
+                <p>Informações Adicionais</p>
+                <span class="hide-a">ESCONDER</span>
+            </div>
+            <p class="aditional-info">{{recipe.information}}</p>
+        </div>
+    {% endif %}
+
+    <script src="js/script.js"></script>
+
+{% endblock %}

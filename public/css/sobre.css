@@ -1,0 +1,21 @@
+#sobre {
+    font-weight: 700;
+}
+
+.text-content {
+    margin-top: 20px;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #444444;
+    margin-top: 20px;
+}
+
+.text-content h3 {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+}
