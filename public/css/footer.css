@@ -1,8 +1,18 @@
-footer {
+.footer-box {
     margin-top: 50px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: flex-end;
+
+}
+
+
+footer {
     padding: 23px 0;
+    background-color: #eeeeee;
+    width: 100%;
     text-align: center;
-    background-color: #eeeeee
 }
 
 footer p {
