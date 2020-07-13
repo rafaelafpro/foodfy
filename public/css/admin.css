@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #111111;
+    padding: 27px 0;
+}
+
+header img {
+    filter: brightness(3000%);
+}
+
+
+
+/* FORM ------------------------------------------------- */
+
+
+form .title-wrapper{
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .title-wrapper h3 {
+    font-size: 24px;
+}
+
+form button {
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    padding: 9px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#delete {
+    float: right;
+    margin-top: 55px;
+    margin-left: 10px;
+}
+
+#delete button {
+    background-color: #DC4747;
+}
+
+
+form .item {
+    margin-top: 30px;
+    color: #111111;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .item input, 
+form .item textarea{
+    margin-top: 10px;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 16px;
+    width: 100%;
+}
+
+form p {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    color: #6558C3;
+    cursor: pointer;
+}
+
+
+form .item textarea {
+    height: 257px;
+
+}
+
+
+/* INDEX ----------------------------- */
+
+
+#index-h2 {
+    margin-top: 50px;
+}
+
+
+.admin-recipes-wrapper {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.admin-recipes-wrapper .image {
+    width: 172px;
+    height: 80px;
+    border-radius: 8.57px;
+    margin-right: 20px;
+}
+
+.admin-recipes-wrapper .item {
+    display: flex;
+}
+
+.admin-recipes-wrapper .item-info p {
+    font-size: 18px;
+    line-height: 21px;
+    color: #111111;
+}
+
+.admin-recipes-wrapper .item-info span {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #777777;
+}
+
+.admin-recipes-wrapper .item-info a {
+    display: block;
+    margin: 10px 0 12px 0;
+    text-decoration: none;
+    color: #6558C3;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+/* EDIT -------------------- */
+
+.show-title-wrapper{
+    margin-top: 55px; 
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-title-wrapper a {
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    padding: 9px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
