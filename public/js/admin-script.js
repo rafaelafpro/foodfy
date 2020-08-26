@@ -4,6 +4,7 @@ const newStepButton = document.querySelector("#new-step")
 newIngredientButton.addEventListener("click", addIngredient)
 newStepButton.addEventListener("click", addStep)
 
+
 function addIngredient(event) {
     
     const ingredients = document.querySelector("#ingredients")
@@ -28,3 +29,5 @@ function addStep() {
 
     steps.appendChild(newField)
 }
+
+

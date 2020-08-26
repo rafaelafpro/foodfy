@@ -1,22 +1,13 @@
-{% extends 'admin/layout.njk' %}
-
-{% block head %}
-<title>Listagem de Receitas | Admin Foodfy</title>
-{% endblock %}
-
-{% block content %}
-    <h2 id='index-h2'>Gerenciar receitas</h2>
-
+    
     <div class="admin-recipes-wrapper">
         {% for recipe in recipes %}
             <div class="item">
                 <div class="image" style="background: url('{{recipe.image}}') no-repeat center / cover"></div>
                 <div class="item-info">
                     <p>{{recipe.title}}</p>
-                    <span>{{recipe.author}}</span>
+                    <span>por {{recipe.chef}}</span>
                     <a href="/admin/recipes/{{recipe.id}}">Visualizar</a>
                 </div>
             </div>
         {% endfor %}
     </div>
-{% endblock %}

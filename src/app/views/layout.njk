@@ -23,7 +23,16 @@
             <div class="menu">
                 <a id="sobre" href="/sobre">Sobre</a>
                 <a id="receitas" href="/receitas">Receitas</a>
+                <a id="chefs" href="/chefs">Chefs</a>
             </div>
+            <div class="search">
+                <form action="/receitas" method="GET">
+                        <input id="search-input" type="text" value="{{filter}}" name="filter" placeholder="Buscar uma receita">
+                        <button id="search-button" type="subit">Buscar</button>
+                </form>
+            </div>
+
+
         </header>
 
         {% block content %}

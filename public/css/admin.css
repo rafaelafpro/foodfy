@@ -19,15 +19,43 @@ body {
     margin: 0 auto;
 }
 
+.header-wrapper {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 header {
     background-color: #111111;
     padding: 27px 0;
+    display: flex;
 }
 
 header img {
     filter: brightness(3000%);
 }
 
+.menu{
+    margin-left: 50.4px;
+}
+
+.menu a{
+    margin-right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu-active {
+    color: white;
+}
+
+.menu-unnactive{
+    color: #999999;
+}
 
 
 /* FORM ------------------------------------------------- */
@@ -77,13 +105,15 @@ form .item {
 }
 
 form .item input, 
-form .item textarea{
+form .item textarea,
+form .item select{
     margin-top: 10px;
     border: 1px solid #DDDDDD;
     border-radius: 4px;
     padding: 16px;
     width: 100%;
 }
+
 
 form p {
     margin-top: 15px;
@@ -176,5 +206,129 @@ form .item textarea {
     border: none;
     cursor: pointer;
     text-decoration: none;
+}
+
+/* CREATE CHEF ---------------- */
+
+.create-chef{
+    margin-top: 55px;
+}
+
+.create-chef .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* SHOW CHEF --------------- */
+
+.show-chef {
+    margin-top: 50px;
+}
+
+.show-chef .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show-chef a{
+    background-color: #6558C3;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 19px;
+    padding: 9px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.show-chef .avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.show-chef .chef-info{
+    margin-top: 51px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    
+.chef-info h1{
+    font-size: 36px;
+    margin-top: 30px;
+}
+
+.chef-info p{
+    font-size: 20px;
+    color: #777777;
+    margin-top: 4px;
+}
+
+.show-chef {
+    margin-bottom: 50px;
+}
+
+
+/* INDEX ======================= */
+
+#chefs-p{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.chefs-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 30px;
+}
+
+.chefs-wrapper .chef-item {
+    display: flex;
+}
+
+.chefs-wrapper .chef-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.chefs-wrapper .chef-text {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chefs-wrapper .chef-text p{
+    font-size: 18px;
+    color: #111111;
+    margin-bottom: 10px
+}
+
+.chefs-wrapper .chef-text a{
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6558C3;
+}
+
+
+/* EDIT CHEF ================ */
+
+#save-button{
+    float: right;
+}
+
+#delete-chef{
+    background-color: #DC4747;
+    float: right;
+    margin-left: 10px;
 }
 

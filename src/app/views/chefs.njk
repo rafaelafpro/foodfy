@@ -1,0 +1,22 @@
+{% extends 'layout.njk' %}
+
+{% block head %}
+    <title>Listagem de Chefs | Receitas Foodfy</title>
+    <link rel="stylesheet" href="/css/chefs.css">
+{% endblock %}
+
+{% block content %}
+    <div class="chefs-wrapper">
+        {% for chef in chefs%}
+            <div class="chef-item">            
+                <div class="chef-img"
+                style="background: url('{{chef.avatar_url}}') no-repeat center / cover">
+                </div>
+                <div class="chef-text">
+                    <p>{{chef.name}}</p>
+                    <span>{{chef.total_recipes}} receitas</span>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

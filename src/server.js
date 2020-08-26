@@ -17,7 +17,7 @@ server.use(routes)
 
 
 server.set("view engine", "njk");
-nunjucks.configure("views", {
+nunjucks.configure("src/app/views", {
     express: server,
     autoescape: false,
     noCache: true
@@ -25,25 +25,11 @@ nunjucks.configure("views", {
 
 
 // ROTAS
-server.get ("/", function (req, res) {
 
-    return res.render("home", {recipes: data.recipes} );
-});
 
-server.get ("/sobre", function (req, res) {
 
-    return res.render("sobre");
-});
 
-server.get ("/receitas", function (req, res) {
 
-    return res.render("receitas", {recipes: data.recipes} );
-});
-
-server.get("/recipes/:index", function (req, res) {
-    const recipeIndex = req.params.index;
-    return res.render("recipe", {recipe: data.recipes[recipeIndex]});
-})
 
 
 

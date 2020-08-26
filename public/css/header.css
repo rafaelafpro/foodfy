@@ -2,6 +2,7 @@ header {
     padding: 38px 0px 36px;
     display: flex;
     align-items: center;
+    flex-direction: row;
 }
 
 header .menu {
@@ -11,5 +12,32 @@ header .menu {
 header .menu a{
     font-size: 16px;
     margin-right: 30px;
+}
+
+.search{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header form input{
+    box-sizing: border-box;
+    width: 246px;
+    height: 37px;
+    border-radius: 4px;
+    border: 1px solid #DDDDDD;
+    padding: 11px 15px;
+    color: #999;
+    font-size: 14px;
+}
+
+header form button{
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 9px 20px;
+    background-color: #6558C3;
+    border-radius: 4px;
+    margin-left: 8px;
 }
 
